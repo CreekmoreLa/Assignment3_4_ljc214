@@ -13,7 +13,7 @@ function bmicalc() {
     let userweight = window.prompt("Please give your height in inches.");
 
     //Verify if user input is usable
-    if(userheight<=0 || userweight <= 0 || isNaN(userheight) || isNaN(userweight)){
+    if(userheight<=0 || userweight <= 0){
         document.write("The height and weight must be numbers higher than zero. Please start again.");
     }
 
@@ -45,15 +45,15 @@ function retirecalc() {
     let userdsav = window.prompt("Please give your savings goal.");
 
     //Verify if user input is usable
-    if (isNaN(userage) || isNaN(useransal) || isNaN(userperc) || isNaN(userdsav)){
-        document.write("The values must be numbers. Please press start again.");
+    if (userage < 1 || useransal < 1 || userperc <= 0 || userperc > 1 || userdsav < 1){
+        document.write("The values must be positive numbers above zero. Percentage should be under one. Please press start again.");
     }
 
     //Calculate retirement age
     useransal = useransal * userperc;
     useransal = useransal * 1.35;
     userdsav = userdsav / useransal;
-    var retireage = userage + userdsav;
+    let retireage = userage + userdsav;
 
     //Inform user of their possible retirement age
     if (retireage > 99){
