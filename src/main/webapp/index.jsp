@@ -6,12 +6,12 @@
 
     <script>
 function bmicalc() {
-    var userheight = window.prompt("Please give your height in inches.");
-    var userweight = window.prompt("Please give your height in inches.");
+    let userheight = window.prompt("Please give your height in inches.");
+    let userweight = window.prompt("Please give your height in inches.");
     userweight = userweight * .45;
     userheight = userheight * .025;
     userheight = userheight * userheight;
-    var userbmi = userweight / userheight;
+    let userbmi = userweight / userheight;
     if(userheight<=0 || userweight <= 0 || isNaN(userheight) || isNaN(userweight)){
         document.write("The height and weight must be numbers higher than zero. Please start again.");
     }
@@ -24,16 +24,16 @@ function bmicalc() {
             document.write("Your bmi is in the healthy range. It is " + userbmi + ".");
         }
         else{
-            document.write"Your bmi is above the healthy range. It is " + userbmi + ".");
+            document.write("Your bmi is above the healthy range. It is " + userbmi + ".");
         }
     }
 
 }
 function retirecalc() {
-    var userage = window.prompt("Please give your age.");
-    var useransal = window.prompt("Please give your annual salary.");
-    var userperc = window.prompt("Please input the percentage of your salary you save as a decimal percentage.");
-    var userdsav = window.prompt("Please give your savings goal.");
+    let userage = window.prompt("Please give your age.");
+    let useransal = window.prompt("Please give your annual salary.");
+    let userperc = window.prompt("Please input the percentage of your salary you save as a decimal percentage.");
+    let userdsav = window.prompt("Please give your savings goal.");
     if (isNaN(userage) || isNaN(useransal) || isNaN(userperc) || isNaN(userdsav)){
         document.write("The values must be numbers. Please press start again.");
     }
