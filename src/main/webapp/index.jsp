@@ -10,7 +10,7 @@
 function bmicalc() {
     //Get user input
     let userheight = window.prompt("Please give your height in inches.");
-    let userweight = window.prompt("Please give your height in inches.");
+    let userweight = window.prompt("Please give your weight in inches.");
 
     //Verify if user input is usable
     if(userheight<=0 || userweight <= 0){
