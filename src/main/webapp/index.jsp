@@ -1,8 +1,8 @@
 <html>
 <body>
-//Title of webapp
+<%--Title of webapp --%>
 <h2>BMI and Retirement Calculator</h2>
-//User choice of calculation
+<%--User choice of calculation --%>
 <button type="button" onclick="bmicalc()">BMI</button>
 <button type="button" onclick="retirecalc()">Retirement</button>
 
