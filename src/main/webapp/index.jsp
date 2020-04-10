@@ -60,7 +60,7 @@ function retirecalc() {
         document.write("You will not make the goal before you die.");
     }
     else {
-        document.write("You will not make the goal before you die.");
+        document.write("Your retirement age should be " + retireage + ".");
     }
 
 }
